@@ -1,0 +1,34 @@
+using System;
+using System.Web.Mvc;
+
+namespace HelloWorldApp.Controllers
+{
+    public class HomeController : Controller
+    {
+        public ActionResult Index()
+        {
+            ViewBag.Message = "Hello, World!";
+            return View();
+        }
+    }
+}
+
+
+/* To use this code, follow these steps:
+
+Create a new ASP.NET MVC project in Visual Studio.
+
+Replace the content of the HomeController.cs file in the Controllers folder with the provided code.
+
+Create a new view file called Index.cshtml in the Views/Home folder.
+
+Add the following content to the Index.cshtml view file:
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<h2>@ViewBag.Message</h2>
+Run the application, and you should see the "Hello, World!" message displayed on the home page.
+This code sets up a controller HomeController with a single action method Index. The action method 
+sets a message in the ViewBag, which is then displayed in the corresponding view Index.cshtml. */
